@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
 .cta-main {
-    @apply px-6 py-3 bg-accent-blue rounded-lg font-roboto-flex font-normal text-font-cta;
+    @apply px-6 py-3 rounded-lg font-roboto-flex font-normal text-font-cta;
+}
+
+.hero-title {
+    @apply font-normal text-black-main font-bebas-neue text-font-hero leading-[84px] tracking-[-0.004em];
 }
