@@ -562,10 +562,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-\[-15rem\] {
   bottom: -15rem;
 }
@@ -616,12 +612,24 @@ video {
   margin-top: 3rem;
 }
 
-.mt-56 {
-  margin-top: 14rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[24rem\] {
+  margin-top: 24rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -630,6 +638,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .min-h-screen {
@@ -648,12 +660,20 @@ video {
   max-width: 1440px;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -691,6 +711,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.font-bebas-neue {
+  font-family: Bebas Neue, sans-serif;
+}
+
 .font-roboto-condensed {
   font-family: Roboto Condensed, sans-serif;
 }
@@ -702,6 +726,14 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-\[1\.344rem\] {
+  font-size: 1.344rem;
+}
+
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
 }
 
 .text-xl {
@@ -723,6 +755,14 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
 .text-accent-blue {
@@ -764,6 +804,11 @@ video {
   letter-spacing: -0.004em;
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -4rem;
 }
 
 .hover\:opacity-60:hover {

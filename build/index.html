@@ -12,11 +12,13 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="./app/swiper.js"></script>
 </head>
 
 <body class="min-h-screen bg-white-main">
     <div class="max-w-container-main mx-auto">
-        <header class="text-dark dark:text-white sticky top-0 z-30">
+        <header class="text-dark dark:text-white z-30">
             <nav class="flex items-center px-32 py-4 mx-auto justify-between" aria-label="main">
                 <a href="/" aria-label="Go to home" class="flex">
                     <img class="w-5" src="./img/logo_icon.svg" alt="logo" />
@@ -58,17 +60,60 @@
                         nas</button>
                 </div>
             </div>
-
             <div class="absolute right-0 mr-32 max-[1440px]:mr-0  bottom-[-15rem] w-[65%] z-20">
                 <img src="./img/cars_group.svg" alt="cars">
             </div>
         </section>
 
-        <section id="#gallery" class="px-32 my-32 mt-56">
-            <p class="text-accent-blue font-roboto-condensed">Prezentacja firmy</p>
-            <h3 class="uppercase">zobacz naszą galerię zdjęć</h3>
+        <section id="#gallery" class=" relative px-32 my-32 mt-[24rem]">
+            <p class="text-accent-blue font-roboto-condensed font-normal text-[1.344rem] leading-8">Prezentacja firmy
+            </p>
+            <h3 class="uppercase font-bebas-neue text-black-main text-[2.5rem] leading-[48px]">zobacz naszą galerię
+                zdjęć</h3>
+
+            <div class="flex flex-row gap-12 mt-6">
+                <h4 class="">Samochody osobowe</h4>
+                <h4 class="">Samochody dostawcze</h4>
+            </div>
+
+            <div class="swiper h-96 mt-20">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/red_car.png" alt="alfa romeo">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/black_maseratti.png" alt="maseratti">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/black_audi.png" alt="audi">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/black_maseratti.png" alt="maseratti">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/honda_accord.webp" alt="honda accord">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/red_car.png" alt="alfa">
+                        </div>
+                    </div>
+                    ...
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
