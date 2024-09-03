@@ -2,38 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
 </head>
 
 <body class="min-h-screen bg-background-main">
     <div class="max-w-container-main mx-auto">
         <header class="text-dark dark:text-white sticky top-0 z-10">
-            <section class="mx-auto px-32 py-4 flex justify-around items-center">
-                <a href="/" class="flex">
-                    <img class="w-5" src="./img/logo_icon_3.svg" alt="">
-                    <h1 class="text-2xl ml-3 font-medium font-roboto-condensed text-black">
+            <nav class="flex items-center px-32 py-4 mx-auto justify-between" aria-label="main">
+                <a href="/" aria-label="Go to home" class="flex">
+                    <img class="w-5" src="./img/logo_icon.svg" alt="logo" />
+                    <h1 class="text-3xl ml-3 font-bold font-roboto-condensed text-black">
                         <span class="text-accent-blue">Cars</span>Spot
                     </h1>
                 </a>
-                <div>
-                    <a href="/" class="text-black font-normal mr-6">Galeria zdjęć</a>
-                    <a href="/" class="text-black font-normal">FaQ</a>
+                <div class="md:block hidden">
+                    <a href="#gallery" class="text-black mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria zdjęć</a>
+                    <a href="#faq" class="text-black hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
                 </div>
-
-                <a href="/">
-                    <button class="px-6 py-3 bg-accent-blue rounded-lg  ">Zadzwoń do nas</button>
+                <a href="#contact" class="md:block hidden">
+                    <button class="cta-main">
+                        Zadzwoń do nas
+                    </button>
                 </a>
-            </section>
-
+                <button id="mobile-btn" class="text-xl text-black md:hidden focus-outline:none">
+                    &#9776;
+                </button>
+            </nav>
         </header>
     </div>
-
 </body>
 
 </html>
