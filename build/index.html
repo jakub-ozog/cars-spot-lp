@@ -11,24 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body class="min-h-screen bg-background-main">
+<body class="min-h-screen bg-white-main">
     <div class="max-w-container-main mx-auto">
-        <header class="text-dark dark:text-white sticky top-0 z-10">
+        <header class="text-dark dark:text-white sticky top-0 z-30">
             <nav class="flex items-center px-32 py-4 mx-auto justify-between" aria-label="main">
                 <a href="/" aria-label="Go to home" class="flex">
                     <img class="w-5" src="./img/logo_icon.svg" alt="logo" />
-                    <h1 class="text-3xl ml-3 font-bold font-roboto-condensed text-black">
+                    <h1 class="text-3xl ml-3 font-bold font-roboto-condensed text-black-main">
                         <span class="text-accent-blue">Cars</span>Spot
                     </h1>
                 </a>
                 <div class="md:block hidden">
-                    <a href="#gallery" class="text-black mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria zdjęć</a>
-                    <a href="#faq" class="text-black hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
+                    <a href="#gallery"
+                        class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
+                        zdjęć</a>
+                    <a href="#faq"
+                        class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
                 </div>
                 <a href="#contact" class="md:block hidden">
-                    <button class="cta-main">
+                    <button class="cta-main text-white-main bg-accent-blue">
                         Zadzwoń do nas
                     </button>
                 </a>
@@ -36,7 +40,34 @@
                     &#9776;
                 </button>
             </nav>
+            <div class="absolute top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1] ">
+                <img class="" src="./img/grey_lines_hero.svg" alt="">
+            </div>
         </header>
+
+        <section id="#hero" class="relative flex justify-between px-32 my-32 z-30">
+            <div>
+                <h2 class="hero-title uppercase">
+                    sprzedajemy samochody <br> z europy
+                </h2>
+                <p class="font-roboto-condensed leading-6 mt-8">Kup komfortowy pojazd, aby każda podróż<br>była
+                    wyjątkowym przeżyciem.</p>
+                <div class="mt-12 space-x-6">
+                    <button class="cta-main text-white-main bg-accent-blue">Zobacz zdjęcia</button>
+                    <button class="cta-main text-accent-blue bg-white-main border border-accent-blue">Zadzwoń do
+                        nas</button>
+                </div>
+            </div>
+
+            <div class="absolute right-0 mr-32 max-[1440px]:mr-0  bottom-[-15rem] w-[65%] z-20">
+                <img src="./img/cars_group.svg" alt="cars">
+            </div>
+        </section>
+
+        <section id="#gallery" class="px-32 my-32 mt-56">
+            <p class="text-accent-blue font-roboto-condensed">Prezentacja firmy</p>
+            <h3 class="uppercase">zobacz naszą galerię zdjęć</h3>
+        </section>
     </div>
 </body>
 

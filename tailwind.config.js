@@ -4,19 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background-main': '#f7f7f7',
-        'accent-blue': '#0147ff'
+        'white-main': '#f7f7f7',
+        'accent-blue': '#0147ff',
+        'black-main': '#282828'
       },
       maxWidth: {
         'container-main': '1440px'
       },
       fontFamily: {
         'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
-        'roboto-flex': ['Roboto Flex', 'sans-serif']
+        'roboto-flex': ['Roboto Flex', 'sans-serif'],
+        'bebas-neue': ['Bebas Neue', 'sans-serif']
       }, 
       fontSize: {
-        'font-cta': '15px'
-      }
+        'font-cta': '15px',
+        'font-hero': '76px'
+      }, 
     },
   },
   plugins: [],
