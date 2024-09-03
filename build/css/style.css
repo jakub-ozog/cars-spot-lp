@@ -562,10 +562,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-\[-15rem\] {
   bottom: -15rem;
 }
@@ -616,28 +612,24 @@ video {
   margin-top: 3rem;
 }
 
-.mt-56 {
-  margin-top: 14rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-\[20\] {
-  margin-top: 20;
-}
-
-.mt-\[20rem\] {
-  margin-top: 20rem;
-}
-
 .mt-\[24rem\] {
   margin-top: 24rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -646,6 +638,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .min-h-screen {
@@ -715,6 +711,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.font-bebas-neue {
+  font-family: Bebas Neue, sans-serif;
+}
+
 .font-roboto-condensed {
   font-family: Roboto Condensed, sans-serif;
 }
@@ -723,26 +723,9 @@ video {
   font-family: Roboto Flex, sans-serif;
 }
 
-.font-bebas-neue {
-  font-family: Bebas Neue, sans-serif;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-\[21\.5rem\] {
-  font-size: 21.5rem;
-}
-
-.text-\[21\.5px\] {
-  font-size: 21.5px;
 }
 
 .text-\[1\.344rem\] {
@@ -751,6 +734,11 @@ video {
 
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -816,6 +804,11 @@ video {
   letter-spacing: -0.004em;
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -4rem;
 }
 
 .hover\:opacity-60:hover {

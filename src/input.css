@@ -9,3 +9,7 @@
 .hero-title {
     @apply font-normal text-black-main font-bebas-neue text-font-hero leading-[84px] tracking-[-0.004em];
 }
+
+.swiper-pagination {
+    @apply absolute bottom-[-4rem]
+}
