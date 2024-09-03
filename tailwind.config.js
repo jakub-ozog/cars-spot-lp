@@ -9,9 +9,13 @@ module.exports = {
       },
       maxWidth: {
         'container-main': '1440px'
-      }, 
+      },
       fontFamily: {
-        'roboto-condensed': ['Roboto Condensed', 'sans-serif']
+        'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
+        'roboto-flex': ['Roboto Flex', 'sans-serif']
+      }, 
+      fontSize: {
+        'font-cta': '15px'
       }
     },
   },
