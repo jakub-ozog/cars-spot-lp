@@ -16,7 +16,7 @@
     <script defer src="./app/swiper.js"></script>
 </head>
 
-<body class="min-h-screen bg-white-main">
+<body class="min-h-screen bg-white-main overflow-x-hidden">
     <div class="max-w-container-main mx-auto">
         <header class="text-dark dark:text-white z-30">
             <nav class="flex items-center px-32 py-4 mx-auto justify-between" aria-label="main">
@@ -65,18 +65,19 @@
             </div>
         </section>
 
-        <section id="#gallery" class=" relative px-32 my-32 mt-[24rem]">
+        <section id="#gallery" class=" relative px-20 my-32 mt-[24rem]">
             <p class="text-accent-blue font-roboto-condensed font-normal text-[1.344rem] leading-8">Prezentacja firmy
             </p>
             <h3 class="uppercase font-bebas-neue text-black-main text-[2.5rem] leading-[48px]">zobacz naszą galerię
                 zdjęć</h3>
 
-            <div class="flex flex-row gap-12 mt-6">
-                <h4 class="">Samochody osobowe</h4>
-                <h4 class="">Samochody dostawcze</h4>
+            <div class="swiper-tabs flex flex-row gap-12 mt-6">
+                <button id="tab-cars" class="tab active-tab">Samochody osobowe</button>
+                <button id="tab-trucks" class="tab">Samochody dostawcze</button>
             </div>
 
-            <div class="swiper h-96 mt-20">
+            <div id="slider-cars" class="swiper overflow-visible h-96 mt-20">
+
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -99,7 +100,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide">
-                            <img src="./img/honda_accord.webp" alt="honda accord">
+                            <img src="./img/black_audi.png" alt="audi">
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -107,10 +108,40 @@
                             <img src="./img/red_car.png" alt="alfa">
                         </div>
                     </div>
-                    ...
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div id="swiper-pag-cars" class="swiper-pagination"></div>
+
+
+            <div id="slider-trucks" class="swiper h-96 mt-20">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slider">
+                        <div class="swiper-slide">
+                            <img src="./img/black_audi.png" alt="audi">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/black_maseratti.png" alt="maseratti">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/black_audi.png" alt="audi">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/red_car.png" alt="alfa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="swiper-pag-trucks" class="swiper-pagination"></div>
+
+
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

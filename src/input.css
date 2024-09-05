@@ -10,6 +10,17 @@
     @apply font-normal text-black-main font-bebas-neue text-font-hero leading-[84px] tracking-[-0.004em];
 }
 
-.swiper-pagination {
-    @apply absolute bottom-[-4rem]
+.active-tab {
+    @apply text-accent-blue font-roboto-flex font-semibold text-font-cta underline underline-offset-[.5rem] decoration-2
+}
+
+.swiper-pagination-bullet {
+    background-color:  #d2d2d2 !important;
+    width: 8px;
+    height: 8px;
+}
+.swiper-pagination-bullet-active {
+    background-color:  #0147ff !important;
+    width: 8px;
+    height: 8px;
 }
