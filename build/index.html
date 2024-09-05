@@ -71,12 +71,12 @@
             <h3 class="uppercase font-bebas-neue text-black-main text-[2.5rem] leading-[48px]">zobacz naszą galerię
                 zdjęć</h3>
 
-            <div class="flex flex-row gap-12 mt-6">
-                <h4 class="">Samochody osobowe</h4>
-                <h4 class="">Samochody dostawcze</h4>
+            <div class="swiper-tabs flex flex-row gap-12 mt-6">
+                <button id="tab-cars" class="tab active-tab">Samochody osobowe</button>
+                <button id="tab-trucks" class="tab">Samochody dostawcze</button>
             </div>
 
-            <div class="swiper h-96 mt-20">
+            <div id="slider-cars" class="swiper h-96 mt-20">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -111,6 +111,38 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+
+
+            <div id="slider-trucks" class="swiper h-96 mt-20 hidden">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slider">
+                        <div class="swiper-slide">
+                            <img src="./img/black_audi.png" alt="audi">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/black_maseratti.png" alt="maseratti">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/honda_accord.webp" alt="honda accord">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/red_car.png" alt="alfa">
+                        </div>
+                    </div>
+                    ...
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

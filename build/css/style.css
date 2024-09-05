@@ -612,6 +612,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -622,14 +626,6 @@ video {
 
 .mt-\[24rem\] {
   margin-top: 24rem;
-}
-
-.mt-11 {
-  margin-top: 2.75rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .flex {
@@ -806,9 +802,15 @@ video {
   color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
-.swiper-pagination {
-  position: absolute;
-  bottom: -4rem;
+.active-tab {
+  font-family: Roboto Flex, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(1 71 255 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .5rem;
 }
 
 .hover\:opacity-60:hover {
