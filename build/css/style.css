@@ -678,6 +678,14 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .border {
   border-width: 1px;
 }
@@ -695,6 +703,11 @@ video {
 .bg-white-main {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-32 {
@@ -811,6 +824,18 @@ video {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: .5rem;
+}
+
+.swiper-pagination-bullet {
+  background-color:  #d2d2d2 !important;
+  width: 8px;
+  height: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:  #0147ff !important;
+  width: 8px;
+  height: 8px;
 }
 
 .hover\:opacity-60:hover {
