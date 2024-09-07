@@ -15,12 +15,9 @@
 }
 
 .swiper-pagination-bullet {
-    background-color:  #d2d2d2 !important;
-    width: 8px;
-    height: 8px;
+    background-color: #d2d2d2 !important;
 }
+
 .swiper-pagination-bullet-active {
-    background-color:  #0147ff !important;
-    width: 8px;
-    height: 8px;
+    background-color: #0147ff !important;
 }
