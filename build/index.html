@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="./app/swiper.js"></script>
 </head>
@@ -42,106 +42,147 @@
                     &#9776;
                 </button>
             </nav>
-            <div class="absolute top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1] ">
-                <img class="" src="./img/grey_lines_hero.svg" alt="">
+            <div class="absolute top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1]">
+                <img class="" src="./img/grey_lines_hero.svg" alt="" />
             </div>
         </header>
 
         <section id="#hero" class="relative flex justify-between px-32 my-32 z-30">
             <div>
                 <h2 class="hero-title uppercase">
-                    sprzedajemy samochody <br> z europy
+                    sprzedajemy samochody <br />
+                    z europy
                 </h2>
-                <p class="font-roboto-condensed leading-6 mt-8">Kup komfortowy pojazd, aby każda podróż<br>była
-                    wyjątkowym przeżyciem.</p>
+                <p class="font-roboto-condensed leading-6 mt-8">
+                    Kup komfortowy pojazd, aby każda podróż<br />była wyjątkowym
+                    przeżyciem.
+                </p>
                 <div class="mt-12 space-x-6">
-                    <button class="cta-main text-white-main bg-accent-blue">Zobacz zdjęcia</button>
-                    <button class="cta-main text-accent-blue bg-white-main border border-accent-blue">Zadzwoń do
-                        nas</button>
+                    <button class="cta-main text-white-main bg-accent-blue">
+                        Zobacz zdjęcia
+                    </button>
+                    <button class="cta-main text-accent-blue bg-white-main border border-accent-blue">
+                        Zadzwoń do nas
+                    </button>
                 </div>
             </div>
-            <div class="absolute right-0 mr-32 max-[1440px]:mr-0  bottom-[-15rem] w-[65%] z-20">
-                <img src="./img/cars_group.svg" alt="cars">
+            <div class="absolute right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] w-[65%] z-20">
+                <img src="./img/cars_group.svg" alt="cars" />
             </div>
         </section>
 
-        <section id="#gallery" class=" relative px-20 my-32 mt-[24rem]">
-            <p class="text-accent-blue font-roboto-condensed font-normal text-[1.344rem] leading-8">Prezentacja firmy
+        <section id="#gallery" class="relative px-20 my-32 mt-[24rem]">
+            <p class="text-accent-blue font-roboto-condensed font-normal text-[1.344rem] leading-8">
+                Prezentacja firmy
             </p>
-            <h3 class="uppercase font-bebas-neue text-black-main text-[2.5rem] leading-[48px]">zobacz naszą galerię
-                zdjęć</h3>
+            <h3 class="uppercase font-bebas-neue text-black-main text-[2.5rem] leading-[48px]">
+                zobacz naszą galerię zdjęć
+            </h3>
 
             <div class="swiper-tabs flex flex-row gap-12 mt-6">
-                <button id="tab-cars" class="tab active-tab">Samochody osobowe</button>
+                <button id="tab-cars" class="tab active-tab">
+                    Samochody osobowe
+                </button>
                 <button id="tab-trucks" class="tab">Samochody dostawcze</button>
             </div>
 
             <div id="slider-cars" class="swiper overflow-visible h-96 mt-20">
-
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/red_car.png" alt="alfa romeo">
+                        <img src="./img/red_car.png" alt="alfa romeo" />
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide">
-                            <img src="./img/black_maseratti.png" alt="maseratti">
+                            <img src="./img/black_maseratti.png" alt="maseratti" />
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide">
-                            <img src="./img/black_audi.png" alt="audi">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./img/black_maseratti.png" alt="maseratti">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.png" alt="audi">
+                            <img src="./img/black_audi.png" alt="audi" />
                         </div>
                     </div>
                     <div class="swiper-slide">
+                        <img src="./img/black_maseratti.png" alt="maseratti" />
+                    </div>
+                    <div class="swiper-slide">
                         <div class="swiper-slide">
-                            <img src="./img/red_car.png" alt="alfa">
+                            <img src="./img/black_audi.png" alt="audi" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/red_car.png" alt="alfa" />
                         </div>
                     </div>
                 </div>
             </div>
             <div id="swiper-pag-cars" class="swiper-pagination"></div>
-
-
             <div id="slider-trucks" class="swiper h-96 mt-20">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
-
                     <div class="swiper-slider">
                         <div class="swiper-slide">
-                            <img src="./img/black_audi.png" alt="audi">
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./img/black_maseratti.png" alt="maseratti">
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.png" alt="audi">
+                            <img src="./img/black_audi.png" alt="audi" />
                         </div>
                     </div>
                     <div class="swiper-slide">
+                        <img src="./img/black_maseratti.png" alt="maseratti" />
+                    </div>
+                    <div class="swiper-slide">
                         <div class="swiper-slide">
-                            <img src="./img/red_car.png" alt="alfa">
+                            <img src="./img/black_audi.png" alt="audi" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide">
+                            <img src="./img/red_car.png" alt="alfa" />
                         </div>
                     </div>
                 </div>
             </div>
             <div id="swiper-pag-trucks" class="swiper-pagination"></div>
-
-
+        </section>
+        <section id="seo" class="bg-black-main">
+            <div class="flex py-[5.5rem] px-20 gap-12 flex-wrap lg:flex-nowrap">
+                <div>
+                    <h4
+                        class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
+                        Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+                        nulla commodo.
+                    </h4>
+                    <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
+                        Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                        Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                    </p>
+                    <div class="border-b-[1.5px] w-fit">
+                        <button
+                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px]">
+                            Rozwiń
+                            <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div class="">
+                    <h4
+                        class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
+                        Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+                        nulla commodo.
+                    </h4>
+                    <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
+                        Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                        Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                    </p>
+                    <div class="border-b-[1.5px] w-fit">
+                        <button
+                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px]">
+                            Rozwiń
+                            <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

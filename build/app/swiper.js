@@ -25,7 +25,6 @@ const swiperCars = new Swiper('#slider-cars', {
                     container.style.overflow = 'visible'
                 }
             }
-
             window.addEventListener('resize', () => updateOverflow(sliderContainer));
         },
     },
