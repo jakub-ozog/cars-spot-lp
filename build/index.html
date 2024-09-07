@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="./app/swiper.js"></script>
+    <script defer src="./app/script.js"></script>
 </head>
 
 <body class="min-h-screen bg-white-main overflow-x-hidden">
@@ -142,8 +143,8 @@
             </div>
             <div id="swiper-pag-trucks" class="swiper-pagination"></div>
         </section>
-        <section id="seo" class="bg-black-main">
-            <div class="flex py-[5.5rem] px-20 gap-12 flex-wrap lg:flex-nowrap">
+        <section id="expandable" class="bg-black-main">
+            <div class="grid grid-cols-1 md:grid-cols-2 py-[5.5rem] px-20 gap-12">
                 <div>
                     <h4
                         class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
@@ -153,32 +154,48 @@
                     <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
                         Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                         Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et <span class="expandBracket">[...]</span>
+                        <span class="expandableText hidden"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur
+                            a.
+                            Donec egestas, nisl vehicula feugiat ornare, diam turpis efficiturmi, ac venenatis eros
+                            ipsum ac arcu. Vestibulum et
+                        </span>
                     </p>
+
                     <div class="border-b-[1.5px] w-fit">
                         <button
-                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px]">
-                            Rozwiń
+                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn test">
+                            <span>
+                                Rozwiń
+                            </span>
                             <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
                         </button>
                     </div>
                 </div>
-                <div class="">
+                <div>
                     <h4
                         class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
                         Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
                         nulla commodo.
                     </h4>
+
                     <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
                         Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                         Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et <span class="expandBracket">[...]</span>
+                        <span class="expandableText hidden"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur
+                            a.
+                            Donec egestas, nisl vehicula feugiat ornare, diam turpis efficiturmi, ac venenatis eros
+                            ipsum ac arcu. Vestibulum et
+                        </span>
                     </p>
                     <div class="border-b-[1.5px] w-fit">
                         <button
-                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px]">
-                            Rozwiń
-                            <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
+                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn">
+                            <span>
+                                Rozwiń
+                            </span>
+                            <img class="w-[13px] h-[14px] arrowDown" src="./img/arrow_down.svg" alt="" />
                         </button>
                     </div>
                 </div>
