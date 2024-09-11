@@ -1,7 +1,4 @@
-
-// const expandableText = document.querySelector('.expandableText')
 const expandBtn = document.querySelectorAll('.expandBtn')
-
 
 expandBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -15,13 +12,11 @@ expandBtn.forEach(button => {
 
         if (isExpanded) {
             expandBtnContent.textContent = 'Zwiń'
-            arrowImg.setAttribute('src', './img/arrow_up.svg'); 
-            console.log(arrowImg.src);
+            arrowImg.setAttribute('src', './img/arrow_up.svg');
         } else {
             expandBtnContent.textContent = 'Rozwiń'
-            arrowImg.setAttribute('src', './img/arrow_down.svg'); 
+            arrowImg.setAttribute('src', './img/arrow_down.svg');
         }
-
 
         const expandBracket = event.target.closest('div').previousElementSibling.querySelector('.expandBracket')
         expandBracket.classList.toggle('hidden')
