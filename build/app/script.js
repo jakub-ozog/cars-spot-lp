@@ -1,4 +1,3 @@
-
 const expandBtn = document.querySelectorAll('.expandBtn')
 
 expandBtn.forEach(button => {
@@ -14,7 +13,6 @@ expandBtn.forEach(button => {
         if (isExpanded) {
             expandBtnContent.textContent = 'Zwiń'
             arrowImg.setAttribute('src', './img/arrow_up.svg');
-            console.log(arrowImg.src);
         } else {
             expandBtnContent.textContent = 'Rozwiń'
             arrowImg.setAttribute('src', './img/arrow_down.svg');
