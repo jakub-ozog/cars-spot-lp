@@ -20,26 +20,48 @@
 <body class="min-h-screen bg-white-main overflow-x-hidden">
     <div class="max-w-container-main mx-auto">
         <header class="relative text-dark dark:text-white z-30">
-            <nav class="flex items-center px-32 py-4 mx-auto justify-between" aria-label="main">
-                <a href="#" aria-label="Go to home" class="flex">
-                    <img class="" src="./img/logo_icon.svg" alt="logo" />
-                    <h1 class="text-3xl ml-3 font-bold font-roboto-condensed text-black-main">
-                        <span class="text-accent-blue">Cars</span>Spot
-                    </h1>
-                </a>
-                <div class="md:block hidden">
-                    <a href="#gallery"
-                        class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
-                        zdjęć</a>
-                    <a href="#faq"
-                        class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
-                </div>
-                <a href="#contact" class="md:block hidden">
-                    <button class="cta-main text-white-main bg-accent-blue">
-                        Zadzwoń do nas
-                    </button>
-                </a>
-                <button id="mobile-btn" class="text-xl text-black md:hidden focus-outline:none">
+            <nav class="lg:flex flex justify-between items-center px-32 py-4 mx-auto">
+                <ul class="flex items-center justify-between w-full" aria-label="main">
+                    <li>
+                        <a href="#" aria-label="Go to home" class="flex">
+                            <img class="" src="./img/logo_icon.svg" alt="logo" />
+                            <h1 class="text-3xl ml-3 font-bold font-roboto-condensed text-black-main">
+                                <span class="text-accent-blue">Cars</span>Spot
+                            </h1>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="xl:block hidden">
+                            <a href="#gallery"
+                                class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
+                                zdjęć</a>
+                            <a href="#faq"
+                                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#contact" class="xl:block hidden">
+                            <button class="cta-main text-white-main bg-accent-blue">
+                                Zadzwoń do nas
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul
+                    class="mobile-menu fixed inset-0 hidden bg-white xl:hidden flex-col items-center justify-center space-y-4">
+                    <li>
+                        <a href="#gallery"
+                            class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
+                            zdjęć</a>
+
+                    </li>
+                    <li>
+                        <a href="#faq"
+                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
+                    </li>
+                </ul>
+                <button class="mobile-btn text-xl text-black xl:hidden focus-outline:none">
                     &#9776;
                 </button>
             </nav>
@@ -59,7 +81,7 @@
                     przeżyciem.
                 </p>
                 <div class="mt-12 space-x-6">
-                    <a href="#gallery" >
+                    <a href="#gallery">
                         <button class="cta-main text-white-main bg-accent-blue">
                             Zobacz zdjęcia
                         </button>

@@ -1,4 +1,6 @@
 const expandBtn = document.querySelectorAll('.expandBtn')
+const mobileBtn = document.querySelector('.mobile-btn')
+const mobileMenu = document.querySelector('.mobile-menu')
 
 expandBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -22,4 +24,8 @@ expandBtn.forEach(button => {
         expandBracket.classList.toggle('hidden')
 
     })
-})  
+})      
+
+mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
