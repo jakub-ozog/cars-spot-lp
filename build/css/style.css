@@ -677,6 +677,18 @@ video {
   width: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-container-main {
   max-width: 1440px;
 }
