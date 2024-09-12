@@ -4,8 +4,8 @@ const swiperCars = new Swiper('#slider-cars', {
     direction: 'horizontal',
     loop: false,
     grabCursor: true,
-    slidesPerView: 2.1,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
     pagination: {
         clickable: true,
         el: '#swiper-pag-cars',
@@ -21,33 +21,53 @@ const swiperCars = new Swiper('#slider-cars', {
             function updateOverflow(container) {
                 if (window.innerWidth >= 1440) {
                     container.style.overflow = 'hidden'
+                } else if (window.innerWidth <= 768) {
+                    container.style.overflow = 'revert-layer'
                 } else {
-                    container.style.overflow = 'visible'
+                     container.style.overflow = 'visible'
                 }
             }
             window.addEventListener('resize', () => updateOverflow(sliderContainer));
         },
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1.5,
+        0: {
+            spaceBetween: 3,
+        },
+       
+        576: {
+            slidesPerView: 1,
+           
+        },
+        640: {   
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 1.5,   
+            spaceBetween: 10,
+        },
+        
+        996: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
         },
         1240: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 10,
         },
         1440: {
             slidesPerView: 2.3,
+            spaceBetween: 40,
         },
     }
-
 });
 
 const swiperTrucks = new Swiper('#slider-trucks', {
     direction: 'horizontal',
     loop: false,
     grabCursor: true,
-    slidesPerView: 2.1,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
     pagination: {
         clickable: true,
         el: '#swiper-pag-trucks',
@@ -64,10 +84,12 @@ const swiperTrucks = new Swiper('#slider-trucks', {
             updateOverflow(sliderContainer);
 
             function updateOverflow(container) {
-                if (window.innerWidth > 1440) {
+                if (window.innerWidth >= 1440) {
                     container.style.overflow = 'hidden'
+                } else if (window.innerWidth <= 768) {
+                    container.style.overflow = 'revert-layer'
                 } else {
-                    container.style.overflow = 'visible'
+                     container.style.overflow = 'visible'
                 }
             }
 
@@ -75,14 +97,33 @@ const swiperTrucks = new Swiper('#slider-trucks', {
         },
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1.5,
+        0: {
+            spaceBetween: 3,
+        },
+       
+        576: {
+            slidesPerView: 3,
+           
+        },
+        640: {   
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 1.5,   
+            spaceBetween: 10,
+        },
+        
+        996: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
         },
         1240: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 10,
         },
         1440: {
             slidesPerView: 2.3,
+            spaceBetween: 40,
         },
     }
 });

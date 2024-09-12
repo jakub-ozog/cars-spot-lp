@@ -6,10 +6,6 @@
     @apply px-6 py-3 rounded-lg font-roboto-flex font-normal text-font-cta;
 }
 
-.hero-title {
-    @apply font-normal text-black-main font-bebas-neue text-font-hero leading-[84px] tracking-[-0.004em];
-}
-
 .active-tab {
     @apply text-accent-blue font-roboto-flex font-semibold text-font-cta underline underline-offset-[.5rem] decoration-2
 }
