@@ -18,7 +18,6 @@ module.exports = {
       }, 
       fontSize: {
         'font-cta': '15px',
-        'font-hero': '76px',
         'font-seo': '25px'
       }, 
     },
