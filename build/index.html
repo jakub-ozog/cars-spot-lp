@@ -20,7 +20,7 @@
 <body class="min-h-screen bg-white-main overflow-x-hidden">
     <div class="max-w-container-main mx-auto">
         <header class="relative text-dark dark:text-white z-30">
-            <nav class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto ">
+            <nav class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto">
                 <ul class="flex items-center justify-between w-full" aria-label="main">
                     <li>
                         <a href="#" aria-label="Go to home" class="flex">
@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#contact" class="xl:block hidden">
+                        <a href="tel:+480000000" class="xl:block hidden">
                             <button class="cta-main text-white-main bg-accent-blue">
                                 Zadzwoń do nas
                             </button>
@@ -49,20 +49,23 @@
                 </ul>
 
                 <ul
-                    class="mobile-menu fixed inset-0 hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50]">
+                    class="mobile-menu fixed inset-0 place-content-center min-h-[100vh] hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50] text-center gap-6">
                     <li>
                         <a href="#gallery"
-                            class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
+                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-4xl">Galeria
                             zdjęć</a>
-
                     </li>
                     <li>
                         <a href="#faq"
-                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
+                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-4xl">FaQ</a>
                     </li>
                 </ul>
-                <button class="mobile-btn text-xl text-black xl:hidden focus-outline:none">
+                <button class="mobile-btn text-3xl text-black xl:hidden focus-outline:none" aria-label="Open menu">
                     &#9776;
+                </button>
+                <button class="mobile-btn-cls text-3xl text-black hidden focus-outline:none z-[99]"
+                    aria-label="Close menu">
+                    &#10005;
                 </button>
             </nav>
             <div
@@ -74,7 +77,7 @@
         <section id="#hero" class="relative px-4 md:px-10 lg:px-32 my-14 md:my-32 z-30">
             <div class="z-10">
                 <h2
-                    class="uppercase font-normal text-black-main font-bebas-neue md:leading-[84px] md:text-[76px] text-4xl">
+                    class="uppercase font-normal text-black-main font-bebas-neue md:leading-[84px] md:text-[76px] text-[40]">
                     sprzedajemy samochody <br />
                     z europy
                 </h2>
@@ -88,7 +91,7 @@
                             Zobacz zdjęcia
                         </button>
                     </a>
-                    <a href="#contact">
+                    <a href="tel:+480000000">
                         <button class="cta-main text-accent-blue bg-white-main border border-accent-blue w-46">
                             Zadzwoń do nas
                         </button>
@@ -96,7 +99,7 @@
                 </div>
             </div>
             <div
-                class="absolute lg:right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] z-[-1]  opacity-40 lg:opacity-70 xl:opacity-100 ">
+                class="absolute lg:right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] z-[-1] opacity-40 lg:opacity-70 xl:opacity-100">
                 <img src="./img/cars_group.svg" alt="cars" />
             </div>
         </section>
@@ -116,7 +119,7 @@
                 <button id="tab-trucks" class="tab">Samochody dostawcze</button>
             </div>
 
-            <div id="slider-cars" class="swiper overflow-visible  md:h-96 mt-20">
+            <div id="slider-cars" class="swiper overflow-visible md:h-96 mt-20">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
@@ -183,20 +186,19 @@
                     <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
                         Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                         Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et <span class="expandBracket">[...]</span>
-                        <span class="expandableText hidden"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur
-                            a.
-                            Donec egestas, nisl vehicula feugiat ornare, diam turpis efficiturmi, ac venenatis eros
-                            ipsum ac arcu. Vestibulum et
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+                        <span class="expandBracket">[...]</span>
+                        <span class="expandableText hidden">
+                            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                            Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                            efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
                         </span>
                     </p>
 
                     <div class="border-b-[1.5px] w-fit">
                         <button
                             class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn test">
-                            <span>
-                                Rozwiń
-                            </span>
+                            <span> Rozwiń </span>
                             <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
                         </button>
                     </div>
@@ -211,27 +213,26 @@
                     <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
                         Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
                         Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et <span class="expandBracket">[...]</span>
-                        <span class="expandableText hidden"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur
-                            a.
-                            Donec egestas, nisl vehicula feugiat ornare, diam turpis efficiturmi, ac venenatis eros
-                            ipsum ac arcu. Vestibulum et
+                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+                        <span class="expandBracket">[...]</span>
+                        <span class="expandableText hidden">
+                            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                            Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                            efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
                         </span>
                     </p>
                     <div class="border-b-[1.5px] w-fit">
                         <button
                             class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn">
-                            <span>
-                                Rozwiń
-                            </span>
+                            <span> Rozwiń </span>
                             <img class="w-[13px] h-[14px] arrowDown" src="./img/arrow_down.svg" alt="" />
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <hr class="w-full bg-white">
-        <footer id="footer" class="bg-black-main px-4 md:px-20">
+        <hr class="w-full bg-white" />
+        <footer id="footer" class="bg-black-main px-4 lg:px-20">
             <div class="flex items-center justify-between text-white py-6">
                 <a class="font-roboto-condensed font-bold leading-6" href="#">Cars Spot</a>
                 <a class="font-roboto-condensed font-normal underline leading-6" href="#policy">Polityka prywatności</a>

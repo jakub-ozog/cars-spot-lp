@@ -24,7 +24,7 @@ const swiperCars = new Swiper('#slider-cars', {
                 } else if (window.innerWidth <= 768) {
                     container.style.overflow = 'revert-layer'
                 } else {
-                     container.style.overflow = 'visible'
+                    container.style.overflow = 'visible'
                 }
             }
             window.addEventListener('resize', () => updateOverflow(sliderContainer));
@@ -34,19 +34,16 @@ const swiperCars = new Swiper('#slider-cars', {
         0: {
             spaceBetween: 3,
         },
-       
         576: {
             slidesPerView: 1,
-           
         },
-        640: {   
+        640: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 1.5,   
+            slidesPerView: 1.5,
             spaceBetween: 10,
         },
-        
         996: {
             slidesPerView: 2.5,
             spaceBetween: 10,
@@ -89,10 +86,9 @@ const swiperTrucks = new Swiper('#slider-trucks', {
                 } else if (window.innerWidth <= 768) {
                     container.style.overflow = 'revert-layer'
                 } else {
-                     container.style.overflow = 'visible'
+                    container.style.overflow = 'visible'
                 }
             }
-
             window.addEventListener('resize', () => updateOverflow(sliderContainer));
         },
     },
@@ -100,19 +96,19 @@ const swiperTrucks = new Swiper('#slider-trucks', {
         0: {
             spaceBetween: 3,
         },
-       
+
         576: {
             slidesPerView: 3,
-           
+
         },
-        640: {   
+        640: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 1.5,   
+            slidesPerView: 1.5,
             spaceBetween: 10,
         },
-        
+
         996: {
             slidesPerView: 2.5,
             spaceBetween: 10,
@@ -158,6 +154,4 @@ swiperContainer.querySelectorAll('.tab').forEach(tab => {
             swiperTrucks.update();
         }
     });
-
-
 });
