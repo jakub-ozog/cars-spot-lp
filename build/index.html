@@ -1,255 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarsSpot</title>
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="description"
-        content="CarsStop - Your trusted partner for buying cars from Europe. Explore a wide selection of quality vehicles at competitive prices. Find your perfect car today!">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
-    <link rel="manifest" href="./img/icons/site.webmanifest">
-    <link rel="mask-icon" href="./img/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="description"
+      content="CarsStop - Your trusted partner for buying cars from Europe. Explore a wide selection of quality vehicles at competitive prices. Find your perfect car today!"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preload" href="./img/cars_group.webp" as="image" />
     <script defer src="./app/swiper.js"></script>
     <script defer src="./app/script.js"></script>
-</head>
+  </head>
 
-<body class="min-h-screen bg-white-main overflow-x-hidden">
+  <body class="min-h-screen bg-white-main overflow-x-hidden">
     <div class="max-w-container-main mx-auto">
-        <header class="relative text-dark dark:text-white z-30">
-            <nav class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto">
-                <ul class="flex items-center justify-between w-full" aria-label="main">
-                    <li>
-                        <a href="#" aria-label="Go to home" class="flex">
-                            <img class="w-4 md:w-auto" src="./img/logo_icon.svg" alt="logo" />
-                            <h1 class="text-xl md:text-3xl ml-3 font-bold font-roboto-condensed text-black-main">
-                                <span class="text-accent-blue">Cars</span>Spot
-                            </h1>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="xl:block hidden">
-                            <a href="#gallery"
-                                class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6">Galeria
-                                zdjęć</a>
-                            <a href="#faq"
-                                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6">FaQ</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="tel:+480000000" class="xl:block hidden">
-                            <button class="cta-main text-white-main bg-accent-blue">
-                                Zadzwoń do nas
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul
-                    class="mobile-menu fixed inset-0 place-content-center min-h-[100vh] hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50] text-center gap-6">
-                    <li>
-                        <a href="#gallery"
-                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl">Galeria
-                            zdjęć</a>
-                    </li>
-                    <li>
-                        <a href="#faq"
-                            class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl">FaQ</a>
-                    </li>
-                </ul>
-                <button class="mobile-btn text-3xl text-black xl:hidden focus-outline:none" aria-label="Open menu">
-                    &#9776;
+      <header class="relative text-dark dark:text-white z-30">
+        <nav
+          class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto"
+        >
+          <ul
+            class="flex items-center justify-between w-full"
+            aria-label="main"
+          >
+            <li>
+              <a href="#" aria-label="Go to home" class="flex">
+                <img
+                  class="w-4 md:w-auto"
+                  src="./img/logo_icon.svg"
+                  alt="logo"
+                />
+                <h1
+                  class="text-xl md:text-3xl ml-3 font-bold font-roboto-condensed text-black-main"
+                >
+                  <span class="text-accent-blue">Cars</span>Spot
+                </h1>
+              </a>
+            </li>
+            <li>
+              <div class="xl:block hidden">
+                <a
+                  href="#gallery"
+                  class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6"
+                  >Galeria zdjęć</a
+                >
+                <a
+                  href="#faq"
+                  class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6"
+                  >FaQ</a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="tel:+480000000" class="xl:block hidden">
+                <button class="cta-main text-white-main bg-accent-blue">
+                  Zadzwoń do nas
                 </button>
-                <button class="mobile-btn-cls text-3xl text-black hidden focus-outline:none z-[99]"
-                    aria-label="Close menu">
-                    &#10005;
-                </button>
-            </nav>
-            <div
-                class="lg:absolute lg:block top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1] hidden lg:opacity-15 xl:opacity-100">
-                <img loading="lazy" class="" src="./img/grey_lines_hero.svg" alt="" />
-            </div>
-        </header>
+              </a>
+            </li>
+          </ul>
 
-        <section id="#hero" class="relative px-4 md:px-10 lg:px-32 my-14 md:my-32 z-30">
-            <div class="z-10">
-                <h2
-                    class="uppercase font-normal text-black-main font-bebas-neue md:leading-[84px] md:text-[76px] text-[40px]">
-                    sprzedajemy samochody <br />
-                    z europy
-                </h2>
-                <p class="font-roboto-condensed leading-6 mt-8">
-                    Kup komfortowy pojazd, aby każda podróż<br />była wyjątkowym
-                    przeżyciem.
-                </p>
-                <div class="mt-12 flex gap-4 sm:gap-6 flex-wrap">
-                    <a href="#gallery">
-                        <button class="cta-main text-white-main bg-accent-blue w-46">
-                            Zobacz zdjęcia
-                        </button>
-                    </a>
-                    <a href="tel:+480000000">
-                        <button class="cta-main text-accent-blue bg-white-main border border-accent-blue w-46">
-                            Zadzwoń do nas
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div
-                class="absolute lg:right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] z-[-1] opacity-40 lg:opacity-70 xl:opacity-100">
-                <img loading="lazy" src="./img/cars_group.webp" alt="cars" />
-            </div>
-        </section>
+          <ul
+            class="mobile-menu fixed inset-0 place-content-center min-h-[100vh] hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50] text-center gap-6"
+          >
+            <li>
+              <a
+                href="#gallery"
+                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+                >Galeria zdjęć</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+                >FaQ</a
+              >
+            </li>
+          </ul>
+          <button
+            class="mobile-btn text-3xl text-black xl:hidden focus-outline:none"
+            aria-label="Open menu"
+          >
+            &#9776;
+          </button>
+          <button
+            class="mobile-btn-cls text-3xl text-black hidden focus-outline:none z-[99]"
+            aria-label="Close menu"
+          >
+            &#10005;
+          </button>
+        </nav>
+        <div
+          class="lg:absolute lg:block top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1] hidden lg:opacity-15 xl:opacity-100"
+        >
+          <img loading="lazy" class="" src="./img/grey_lines_hero.svg" alt="" />
+        </div>
+      </header>
 
-        <section id="gallery" class="relative px-3 lg:px-20 my-32 md:my-32 mt-64 md:mt-[24rem]">
-            <p class="text-accent-blue font-roboto-condensed font-normal text-xl md:text-[1.344rem] leading-8">
-                Prezentacja firmy
+      <section
+        id="#hero"
+        class="relative px-4 md:px-10 lg:px-32 my-14 md:my-32 z-30"
+      >
+        <div class="z-10">
+          <h2
+            class="uppercase font-normal text-black-main font-bebas-neue md:leading-[84px] md:text-[76px] text-[40px]"
+          >
+            sprzedajemy samochody <br />
+            z europy
+          </h2>
+          <p class="font-roboto-condensed leading-6 mt-8">
+            Kup komfortowy pojazd, aby każda podróż<br />była wyjątkowym
+            przeżyciem.
+          </p>
+          <div class="mt-12 flex gap-4 sm:gap-6 flex-wrap">
+            <a href="#gallery">
+              <button class="cta-main text-white-main bg-accent-blue w-46">
+                Zobacz zdjęcia
+              </button>
+            </a>
+            <a href="tel:+480000000">
+              <button
+                class="cta-main text-accent-blue bg-white-main border border-accent-blue w-46"
+              >
+                Zadzwoń do nas
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="absolute lg:right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] z-[-1] opacity-40 lg:opacity-70 xl:opacity-100"
+        >
+          <img loading="lazy" src="./img/cars_group.webp" alt="cars" />
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="relative px-3 lg:px-20 my-32 md:my-32 mt-64 md:mt-[24rem]"
+      >
+        <p
+          class="text-accent-blue font-roboto-condensed font-normal text-xl md:text-[1.344rem] leading-8"
+        >
+          Prezentacja firmy
+        </p>
+        <h3
+          class="uppercase font-bebas-neue text-black-main text-3xl md:text-[2.5rem] leading-[48px]"
+        >
+          zobacz naszą galerię zdjęć
+        </h3>
+
+        <div class="swiper-tabs flex flex-row flex-wrap gap-4 md:gap-12 mt-6">
+          <button id="tab-cars" class="tab active-tab">
+            Samochody osobowe
+          </button>
+          <button id="tab-trucks" class="tab">Samochody dostawcze</button>
+        </div>
+
+        <div id="slider-cars" class="swiper overflow-visible md:h-96 mt-20">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/red_car.webp" alt="alfa romeo" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/black_maseratti.webp" alt="maseratti" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/black_audi.webp" alt="audi" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/black_maseratti.webp" alt="maseratti" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/black_audi.webp" alt="audi" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/red_car.webp" alt="alfa" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="swiper-pag-cars" class="swiper-pagination w"></div>
+        <div id="slider-trucks" class="swiper md:h-96 mt-20">
+          <div class="swiper-wrapper">
+            <div class="swiper-slider">
+              <div class="swiper-slide">
+                <img src="./img/black_audi.webp" alt="audi" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/black_maseratti.webp" alt="maseratti" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/black_audi.webp" alt="audi" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <img src="./img/red_car.webp" alt="alfa" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="swiper-pag-trucks" class="swiper-pagination"></div>
+      </section>
+      <section id="expandable" class="bg-black-main">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 py-6 md:py-[5.5rem] px-4 lg:px-20 gap-12"
+        >
+          <div>
+            <h4
+              class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
+            >
+              Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+              nulla commodo.
+            </h4>
+            <p
+              class="mt-4 text-white font-roboto-condensed text-sm font-normal"
+            >
+              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+              mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+              <span class="expandBracket">[...]</span>
+              <span class="expandableText hidden">
+                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
+              </span>
             </p>
-            <h3 class="uppercase font-bebas-neue text-black-main text-3xl md:text-[2.5rem] leading-[48px]">
-                zobacz naszą galerię zdjęć
-            </h3>
 
-            <div class="swiper-tabs flex flex-row flex-wrap gap-4 md:gap-12 mt-6">
-                <button id="tab-cars" class="tab active-tab">
-                    Samochody osobowe
-                </button>
-                <button id="tab-trucks" class="tab">Samochody dostawcze</button>
+            <div class="border-b-[1.5px] w-fit">
+              <button
+                class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn test"
+              >
+                <span> Rozwiń </span>
+                <img
+                  class="w-[13px] h-[14px]"
+                  src="./img/arrow_down.svg"
+                  alt=""
+                />
+              </button>
             </div>
+          </div>
+          <div>
+            <h4
+              class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
+            >
+              Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+              nulla commodo.
+            </h4>
 
-            <div id="slider-cars" class="swiper overflow-visible md:h-96 mt-20">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./img/red_car.webp" alt="alfa romeo" />
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_maseratti.webp" alt="maseratti" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.webp" alt="audi" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/black_maseratti.webp" alt="maseratti" />
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.webp" alt="audi" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/red_car.webp" alt="alfa" />
-                        </div>
-                    </div>
-                </div>
+            <p
+              class="mt-4 text-white font-roboto-condensed text-sm font-normal"
+            >
+              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+              mi, ac venenatis eros ipsum ac arcu. Vestibulum et
+              <span class="expandBracket">[...]</span>
+              <span class="expandableText hidden">
+                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+                Donec egestas, nisl vehicula feugiat ornare, diam turpis
+                efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
+              </span>
+            </p>
+            <div class="border-b-[1.5px] w-fit">
+              <button
+                class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn"
+              >
+                <span> Rozwiń </span>
+                <img
+                  class="w-[13px] h-[14px] arrowDown"
+                  src="./img/arrow_down.svg"
+                  alt=""
+                />
+              </button>
             </div>
-            <div id="swiper-pag-cars" class="swiper-pagination w"></div>
-            <div id="slider-trucks" class="swiper md:h-96 mt-20">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slider">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.webp" alt="audi" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/black_maseratti.webp" alt="maseratti" />
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/black_audi.webp" alt="audi" />
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide">
-                            <img src="./img/red_car.webp" alt="alfa" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="swiper-pag-trucks" class="swiper-pagination"></div>
-        </section>
-        <section id="expandable" class="bg-black-main">
-            <div class="grid grid-cols-1 md:grid-cols-2 py-6 md:py-[5.5rem] px-4 lg:px-20 gap-12">
-                <div>
-                    <h4
-                        class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
-                        Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
-                        nulla commodo.
-                    </h4>
-                    <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
-                        Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                        Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                        <span class="expandBracket">[...]</span>
-                        <span class="expandableText hidden">
-                            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                            Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                            efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                        </span>
-                    </p>
-
-                    <div class="border-b-[1.5px] w-fit">
-                        <button
-                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn test">
-                            <span> Rozwiń </span>
-                            <img class="w-[13px] h-[14px]" src="./img/arrow_down.svg" alt="" />
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <h4
-                        class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal">
-                        Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
-                        nulla commodo.
-                    </h4>
-
-                    <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
-                        Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                        Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-                        mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                        <span class="expandBracket">[...]</span>
-                        <span class="expandableText hidden">
-                            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                            Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                            efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
-                        </span>
-                    </p>
-                    <div class="border-b-[1.5px] w-fit">
-                        <button
-                            class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn">
-                            <span> Rozwiń </span>
-                            <img class="w-[13px] h-[14px] arrowDown" src="./img/arrow_down.svg" alt="" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="w-full bg-white" />
-        <footer id="footer" class="bg-black-main px-4 lg:px-20">
-            <div class="flex items-center justify-between text-white py-6">
-                <a class="font-roboto-condensed font-bold leading-6" href="#">Cars Spot</a>
-                <a class="font-roboto-condensed font-normal underline leading-6 text-sm md:text-[16px]"
-                    href="#policy">Polityka prywatności</a>
-            </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <hr class="w-full bg-white" />
+      <footer id="footer" class="bg-black-main px-4 lg:px-20">
+        <div class="flex items-center justify-between text-white py-6">
+          <a class="font-roboto-condensed font-bold leading-6" href="#"
+            >Cars Spot</a
+          >
+          <a
+            class="font-roboto-condensed font-normal underline leading-6 text-sm md:text-[16px]"
+            href="#policy"
+            >Polityka prywatności</a
+          >
+        </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
