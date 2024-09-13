@@ -861,6 +861,14 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -916,6 +924,10 @@ video {
 .text-white-main {
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
+}
+
+.text-\[40\] {
+  color: 40;
 }
 
 .underline {

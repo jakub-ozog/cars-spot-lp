@@ -4,26 +4,36 @@ const mobileBtnCls = document.querySelector('.mobile-btn-cls')
 const mobileMenu = document.querySelector('.mobile-menu')
 const heroSection = document.getElementById('#hero')
 const body = document.querySelector('body')
+const mobileLinks = mobileMenu.querySelectorAll('li')
 
-    
 
 mobileBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden')
     mobileMenu.classList.toggle('grid')
     heroSection.classList.toggle('hidden')
-    mobileBtnCls.classList.remove('hidden');  
+    mobileBtnCls.classList.remove('hidden');
     body.classList.add('body-no-scroll')
-
 })
 
 mobileBtnCls.addEventListener('click', () => {
     mobileMenu.classList.remove('open', 'grid');
     mobileMenu.classList.toggle('hidden')
-    mobileBtnCls.classList.toggle('hidden'); 
+    mobileBtnCls.classList.toggle('hidden');
     heroSection.classList.toggle('hidden')
     body.classList.remove('body-no-scroll')
-    
 });
+
+
+
+mobileLinks.forEach(item => {
+    item.addEventListener('click', () => {
+        mobileMenu.classList.remove('open', 'grid');
+        mobileMenu.classList.toggle('hidden')
+        mobileBtnCls.classList.toggle('hidden');
+        heroSection.classList.toggle('hidden')
+        body.classList.remove('body-no-scroll')
+    })
+})
 
 expandBtn.forEach(button => {
     button.addEventListener('click', () => {
