@@ -760,6 +760,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .border {
   border-width: 1px;
 }
@@ -842,9 +846,8 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-font-seo {
@@ -859,14 +862,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[2\.5rem\] {
-  font-size: 2.5rem;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .font-bold {
@@ -926,16 +921,16 @@ video {
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
 
-.text-\[40\] {
-  color: 40;
-}
-
 .underline {
   text-decoration-line: underline;
 }
 
 .opacity-40 {
   opacity: 0.4;
+}
+
+html {
+  scroll-behavior: smooth
 }
 
 .cta-main {
@@ -971,9 +966,9 @@ video {
 .mobile-menu {
   transition: transform 0.3s ease-in-out;
   background-color: rgb(255 255 255 / 20%);
-  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(50px) saturate(180%);
   /* Safari support */
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(65px);
 }
 
 .mobile-menu.open {
@@ -985,7 +980,7 @@ video {
 }
 
 .body-no-scroll {
-  overflow-y:  hidden;
+  overflow-y: hidden;
 }
 
 .hover\:opacity-60:hover {
@@ -1039,11 +1034,6 @@ video {
     padding-right: 2.5rem;
   }
 
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .md\:py-\[5\.5rem\] {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
@@ -1056,6 +1046,10 @@ video {
 
   .md\:text-\[1\.344rem\] {
     font-size: 1.344rem;
+  }
+
+  .md\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .md\:text-\[2\.5rem\] {
