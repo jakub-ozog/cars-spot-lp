@@ -19,11 +19,12 @@ const swiperCars = new Swiper('#slider-cars', {
             updateOverflow(sliderContainer);
 
             function updateOverflow(container) {
-                if (window.innerWidth >= 1440) {
+                if (window.innerWidth >= 1500) {
                     container.style.overflow = 'hidden'
-                } else if (window.innerWidth <= 768) {
+                } else if (window.innerWidth <= 1400) {
                     container.style.overflow = 'revert-layer'
-                } else {
+                }
+                else {
                     container.style.overflow = 'visible'
                 }
             }
@@ -81,9 +82,9 @@ const swiperTrucks = new Swiper('#slider-trucks', {
             updateOverflow(sliderContainer);
 
             function updateOverflow(container) {
-                if (window.innerWidth >= 1440) {
+                if (window.innerWidth >= 1500) {
                     container.style.overflow = 'hidden'
-                } else if (window.innerWidth <= 768) {
+                } else if (window.innerWidth <= 1400) {
                     container.style.overflow = 'revert-layer'
                 } else {
                     container.style.overflow = 'visible'
