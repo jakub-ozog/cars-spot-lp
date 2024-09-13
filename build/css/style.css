@@ -760,10 +760,6 @@ video {
   overflow-x: hidden;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 .border {
   border-width: 1px;
 }
@@ -956,7 +952,10 @@ html {
 }
 
 .swiper-pagination-bullet {
+  padding: .25rem !important;
   background-color: #d2d2d2 !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 .swiper-pagination-bullet-active {

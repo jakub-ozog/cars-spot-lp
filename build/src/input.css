@@ -15,11 +15,15 @@ html {
 }
 
 .swiper-pagination-bullet {
+    padding: .25rem !important;
     background-color: #d2d2d2 !important;
+    width: 12px !important;
+    height: 12px !important;
 }
 
 .swiper-pagination-bullet-active {
     background-color: #0147ff !important;
+    
 }
 
 .mobile-menu {
