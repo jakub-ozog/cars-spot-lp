@@ -6,7 +6,6 @@ const heroSection = document.getElementById('#hero')
 const body = document.querySelector('body')
 const mobileLinks = mobileMenu.querySelectorAll('li')
 
-
 mobileBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden')
     mobileMenu.classList.toggle('grid')
@@ -22,8 +21,6 @@ mobileBtnCls.addEventListener('click', () => {
     heroSection.classList.toggle('hidden')
     body.classList.remove('body-no-scroll')
 });
-
-
 
 mobileLinks.forEach(item => {
     item.addEventListener('click', () => {
@@ -55,6 +52,5 @@ expandBtn.forEach(button => {
 
         const expandBracket = event.target.closest('div').previousElementSibling.querySelector('.expandBracket')
         expandBracket.classList.toggle('hidden')
-
     })
 })      
