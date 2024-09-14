@@ -58,90 +58,92 @@
   </head>
 
   <body class="min-h-screen bg-white-main overflow-x-hidden">
-    <div class="max-w-container-main mx-auto">
-      <header class="relative text-dark dark:text-white z-30">
-        <nav
-          class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto"
-        >
-          <ul
-            class="flex items-center justify-between w-full"
-            aria-label="main"
-          >
-            <li>
-              <a href="#" aria-label="Go to home" class="flex">
-                <img
-                  class="w-4 md:w-auto"
-                  src="./img/logo_icon.svg"
-                  alt="logo"
-                />
-                <h1
-                  class="text-xl md:text-3xl ml-3 font-bold font-roboto-condensed text-black-main"
-                >
-                  <span class="text-accent-blue">Cars</span>Spot
-                </h1>
-              </a>
-            </li>
-            <li>
-              <div class="xl:block hidden">
-                <a
-                  href="#gallery"
-                  class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6"
-                  >Galeria zdjęć</a
-                >
-                <a
-                  href="#faq"
-                  class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6"
-                  >FaQ</a
-                >
-              </div>
-            </li>
-            <li>
-              <a href="tel:+480000000" class="xl:block hidden">
-                <button class="cta-main text-white-main bg-accent-blue">
-                  Zadzwoń do nas
-                </button>
-              </a>
-            </li>
-          </ul>
-
-          <ul
-            class="mobile-menu fixed inset-0 place-content-center min-h-[100vh] hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50] text-center gap-6"
-          >
-            <li>
+    <header class="relative text-dark dark:text-white z-30">
+      <nav
+        class="lg:flex flex justify-between items-center py-4 px-4 md:px-10 lg:px-32 mx-auto"
+      >
+        <ul class="flex items-center justify-between w-full" aria-label="main">
+          <li>
+            <a href="#" aria-label="Go to home" class="flex">
+              <img class="w-4 md:w-auto" src="./img/logo_icon.svg" alt="logo" />
+              <h1
+                class="text-xl md:text-3xl ml-3 font-bold font-roboto-condensed text-black-main"
+              >
+                <span class="text-accent-blue">Cars</span>Spot
+              </h1>
+            </a>
+          </li>
+          <li>
+            <div class="xl:block hidden">
               <a
                 href="#gallery"
-                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+                class="text-black-main mr-6 hover:opacity-60 font-roboto-flex font-normal leading-6"
                 >Galeria zdjęć</a
               >
-            </li>
-            <li>
               <a
                 href="#faq"
-                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+                class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6"
                 >FaQ</a
               >
-            </li>
-          </ul>
-          <button
-            class="mobile-btn text-3xl text-black xl:hidden focus-outline:none"
-            aria-label="Open menu"
-          >
-            &#9776;
-          </button>
-          <button
-            class="mobile-btn-cls text-3xl text-black hidden focus-outline:none z-[99]"
-            aria-label="Close menu"
-          >
-            &#10005;
-          </button>
-        </nav>
-        <div
-          class="lg:absolute lg:block top-0 right-0 mr-32 max-[1440px]:mr-16 z-[-1] hidden lg:opacity-15 xl:opacity-100"
-        >
-          <img loading="lazy" class="" src="./img/grey_lines_hero.svg" alt="" />
-        </div>
-      </header>
+            </div>
+          </li>
+          <li>
+            <a href="tel:+480000000" class="xl:block hidden">
+              <button class="cta-main text-white-main bg-accent-blue">
+                Zadzwoń do nas
+              </button>
+            </a>
+          </li>
+        </ul>
 
+        <ul
+          class="mobile-menu fixed inset-0 place-content-center min-h-[100vh] hidden bg-white xl:hidden flex-col items-center justify-center space-y-4 z-[50] text-center gap-6"
+        >
+          <li>
+            <a
+              href="#gallery"
+              class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+              >Galeria zdjęć</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="text-black-main hover:opacity-60 font-roboto-flex font-normal leading-6 text-3xl"
+              >FaQ</a
+            >
+          </li>
+        </ul>
+        <button
+          class="mobile-btn text-3xl text-black xl:hidden focus-outline:none"
+          aria-label="Open menu"
+        >
+          &#9776;
+        </button>
+        <button
+          class="mobile-btn-cls text-3xl text-black hidden focus-outline:none z-[99]"
+          aria-label="Close menu"
+        >
+          &#10005;
+        </button>
+      </nav>
+      <div
+        class="lg:absolute lg:block top-0 right-0 max-[1440px]:mr-16 z-[-1] hidden lg:opacity-15 xl:opacity-100"
+      >
+        <img loading="lazy" class="" src="./img/grey_lines_hero.svg" alt="" />
+      </div>
+      <div
+        class="absolute lg:right-0 max-[1440px]:mr-0 bottom-[-35rem] md:bottom-[-45rem] z-[-1] opacity-40 lg:opacity-70 xl:opacity-100"
+      >
+        <img
+          loading="lazy"
+          src="./img/cars_group.webp"
+          alt="cars"
+          class="2xl:w-[1300px]"
+        />
+      </div>
+    </header>
+    <div class="max-w-container-main mx-auto">
       <section
         id="#hero"
         class="relative px-4 md:px-10 lg:px-32 my-14 md:my-32 z-30"
@@ -172,13 +174,7 @@
             </a>
           </div>
         </div>
-        <div
-          class="absolute lg:right-0 mr-32 max-[1440px]:mr-0 bottom-[-15rem] z-[-1] opacity-40 lg:opacity-70 xl:opacity-100"
-        >
-          <img loading="lazy" src="./img/cars_group.webp" alt="cars" />
-        </div>
       </section>
-
       <section
         id="gallery"
         class="relative px-3 lg:px-20 my-32 md:my-32 mt-64 md:mt-[24rem]"
@@ -257,94 +253,92 @@
         </div>
         <div id="swiper-pag-trucks" class="swiper-pagination"></div>
       </section>
-      <section id="expandable" class="bg-black-main">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 py-6 md:py-[5.5rem] px-4 lg:px-20 gap-12"
-        >
-          <div>
-            <h4
-              class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
-            >
-              Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
-              nulla commodo.
-            </h4>
-            <p
-              class="mt-4 text-white font-roboto-condensed text-sm font-normal"
-            >
-              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-              mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-              <span class="expandBracket">[...]</span>
-              <span class="expandableText hidden">
-                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
-              </span>
-            </p>
-
-            <div class="border-b-[1.5px] w-fit">
-              <button
-                class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn"
-              >
-                <span> Rozwiń </span>
-                <img
-                  class="w-[13px] h-[14px]"
-                  src="./img/arrow_down.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-          <div>
-            <h4
-              class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
-            >
-              Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
-              nulla commodo.
-            </h4>
-
-            <p
-              class="mt-4 text-white font-roboto-condensed text-sm font-normal"
-            >
-              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-              Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
-              mi, ac venenatis eros ipsum ac arcu. Vestibulum et
-              <span class="expandBracket">[...]</span>
-              <span class="expandableText hidden">
-                Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
-                Donec egestas, nisl vehicula feugiat ornare, diam turpis
-                efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
-              </span>
-            </p>
-            <div class="border-b-[1.5px] w-fit">
-              <button
-                class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn"
-              >
-                <span> Rozwiń </span>
-                <img
-                  class="w-[13px] h-[14px] arrowDown"
-                  src="./img/arrow_down.svg"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="w-full bg-white" />
-      <footer id="footer" class="bg-black-main px-4 lg:px-20">
-        <div class="flex items-center justify-between text-white py-6">
-          <a class="font-roboto-condensed font-bold leading-6" href="#"
-            >Cars Spot</a
-          >
-          <a
-            class="font-roboto-condensed font-normal underline leading-6 text-sm md:text-[16px]"
-            href="#policy"
-            >Polityka prywatności</a
-          >
-        </div>
-      </footer>
     </div>
+    <section id="expandable" class="bg-black-main">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 py-6 md:py-[5.5rem] px-4 lg:px-20 2xl:px-32 gap-12"
+      >
+        <div>
+          <h4
+            class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
+          >
+            Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+            nulla commodo.
+          </h4>
+          <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
+            egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
+            venenatis eros ipsum ac arcu. Vestibulum et
+            <span class="expandBracket">[...]</span>
+            <span class="expandableText hidden">
+              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+              Donec egestas, nisl vehicula feugiat ornare, diam turpis
+              efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
+            </span>
+          </p>
+
+          <div class="border-b-[1.5px] w-fit">
+            <button
+              class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn"
+            >
+              <span> Rozwiń </span>
+              <img
+                class="w-[13px] h-[14px]"
+                src="./img/arrow_down.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div>
+          <h4
+            class="uppercase text-white text-left text-font-seo font-bebas-neue leading-[37.5px] font-normal"
+          >
+            Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+            nulla commodo.
+          </h4>
+
+          <p class="mt-4 text-white font-roboto-condensed text-sm font-normal">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
+            egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
+            venenatis eros ipsum ac arcu. Vestibulum et
+            <span class="expandBracket">[...]</span>
+            <span class="expandableText hidden">
+              Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+              Donec egestas, nisl vehicula feugiat ornare, diam turpis
+              efficiturmi, ac venenatis eros ipsum ac arcu. Vestibulum et
+            </span>
+          </p>
+          <div class="border-b-[1.5px] w-fit">
+            <button
+              class="flex gap-[6px] items-center text-white mt-6 font-roboto-condensed font-normal text-sm leading-[21px] pb-[6px] expandBtn"
+            >
+              <span> Rozwiń </span>
+              <img
+                class="w-[13px] h-[14px] arrowDown"
+                src="./img/arrow_down.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="w-full bg-white" />
+
+    <footer id="footer" class="bg-black-main px-4 lg:px-20 2xl:px-32">
+      <div class="flex items-center justify-between text-white py-6">
+        <a class="font-roboto-condensed font-bold leading-6" href="#"
+          >Cars Spot</a
+        >
+        <a
+          class="font-roboto-condensed font-normal underline leading-6 text-sm md:text-[16px]"
+          href="#policy"
+          >Polityka prywatności</a
+        >
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

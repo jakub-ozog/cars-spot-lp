@@ -57,6 +57,10 @@ const swiperCars = new Swiper('#slider-cars', {
             slidesPerView: 2.3,
             spaceBetween: 40,
         },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
     }
 });
 
@@ -119,6 +123,10 @@ const swiperTrucks = new Swiper('#slider-trucks', {
             slidesPerView: 2.3,
             spaceBetween: 40,
         },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
     }
 });
 

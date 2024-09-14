@@ -570,8 +570,8 @@ video {
   inset: 0px;
 }
 
-.bottom-\[-15rem\] {
-  bottom: -15rem;
+.bottom-\[-35rem\] {
+  bottom: -35rem;
 }
 
 .right-0 {
@@ -619,10 +619,6 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.mr-32 {
-  margin-right: 8rem;
 }
 
 .mr-6 {
@@ -999,6 +995,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-\[-45rem\] {
+    bottom: -45rem;
+  }
+
   .md\:my-32 {
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -1107,6 +1107,17 @@ html {
 
   .xl\:opacity-100 {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[1300px\] {
+    width: 1300px;
+  }
+
+  .\32xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 

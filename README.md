@@ -52,7 +52,7 @@ git clone https://github.com/yourusername/project-name.git
 3. **Run Tailwind CSS compiler using below build command**
 
    ```bash
-   npm run tailwindcss
+   npm run tailwind
    ```
 4. **Open the `index.html` file in your browser using Live Server:**
 
