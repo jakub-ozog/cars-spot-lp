@@ -97,10 +97,8 @@ const swiperTrucks = new Swiper('#slider-trucks', {
         0: {
             spaceBetween: 3,
         },
-
         576: {
             slidesPerView: 3,
-
         },
         640: {
             slidesPerView: 2,
@@ -109,7 +107,6 @@ const swiperTrucks = new Swiper('#slider-trucks', {
             slidesPerView: 1.5,
             spaceBetween: 10,
         },
-
         996: {
             slidesPerView: 2.5,
             spaceBetween: 10,

@@ -974,10 +974,6 @@ html {
   transform: scale(1);
 }
 
-.mobile-menu.closed {
-  transform: scale(0);
-}
-
 .body-no-scroll {
   overflow-y: hidden;
 }
